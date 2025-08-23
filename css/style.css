@@ -339,7 +339,7 @@ nav {
 .content-headline {
   text-transform: uppercase;
   font-weight: lighter;
-  font-size: 5vw;
+  font-size : clamp(2rem, 5vw, 4rem);
   margin: 0;
 }
 
