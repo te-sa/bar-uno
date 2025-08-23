@@ -297,6 +297,7 @@ body {
   }
 
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 2em;
   gap: 2em;
@@ -309,18 +310,19 @@ body {
 .card-container {
   display: flex;
   gap: 2em;
+  flex-wrap: wrap;
 }
 
 .review-card-container {
   display: flex;
   gap: 2em;
-  max-height: 15em;
+  flex-wrap: wrap;
 }
 
 .card {
   background: white;
   border-radius: 0.5em;
-  flex: 1 1 0;
+  flex: 1 1 240px;
 
   img {
     height: 20em;
@@ -332,4 +334,28 @@ body {
   .card-content {
     padding: 1em;
   }
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: space-between;
+  padding: 2em;
+
+  * {
+    flex: 1 1 240px;
+  }
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
