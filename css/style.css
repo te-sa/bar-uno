@@ -356,7 +356,17 @@ body {
   justify-content: space-between;
   padding: 2em;
 
-  * {
+  .section-title {
+    text-transform: uppercase;
+    font-size: 1.25em;
+  }
+
+  .business-hrs-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section {
     flex: 1 1 240px;
   }
 }
