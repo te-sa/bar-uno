@@ -259,6 +259,29 @@ body {
   font-family: Montserrat, sans-serif;
 }
 
+nav {
+  height: 5em;
+  width: 100%;
+  background: black;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  div {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    gap: 0.5em;
+
+    a {
+      padding: 1em;
+    }
+  }
+}
+
 .header-container {
   position: relative;
 
