@@ -262,6 +262,10 @@ body {
 .header-container {
   position: relative;
 
+  svg {
+    width: 40vw;
+  }
+
   .container-centered {
     position: absolute;
     top: 50%;
@@ -360,4 +364,40 @@ body {
 a {
   text-decoration: none;
   color: black;
+}
+
+/* logo animation */
+.logo-path {
+  path {
+    stroke: #fff;
+    stroke-width: 0;
+    stroke-dasharray: 500;
+  }
+  path {
+    animation: letter-animation 2s linear forwards;
+  }
+}
+
+@keyframes letter-animation {
+  0% {
+    stroke-dashoffset: 500;
+    stroke-width: 0.8;
+    fill-opacity: 0;
+    fill: #fff;
+  }
+  25% {
+    fill-opacity: 0.2;
+  }
+  50% {
+    fill-opacity: 0.5;
+  }
+  75% {
+    fill-opacity: 0.8;
+  }
+  100% {
+    fill-opacity: 1;
+    stroke-width: 0;
+    stroke-dashoffset: 0;
+    fill: #fff;
+  }
 }
