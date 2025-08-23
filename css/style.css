@@ -329,12 +329,17 @@ nav {
   justify-content: space-between;
   padding: 2em;
   gap: 2em;
+
+  > article {
+    max-width: 700px;
+    overflow: hidden;
+  }
 }
 
 .content-headline {
   text-transform: uppercase;
   font-weight: lighter;
-  font-size: 3.5em;
+  font-size: 5vw;
   margin: 0;
 }
 
