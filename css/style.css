@@ -283,6 +283,10 @@ body {
   color: white;
 }
 
+.black-text {
+  color: black;
+}
+
 .content-div {
   &.olive {
     background: #292c1f;
@@ -307,9 +311,16 @@ body {
   gap: 2em;
 }
 
+.review-card-container {
+  display: flex;
+  gap: 2em;
+  max-height: 15em;
+}
+
 .card {
   background: white;
   border-radius: 0.5em;
+  flex: 1 1 0;
 
   img {
     height: 20em;
@@ -318,7 +329,7 @@ body {
     border-radius: 0.5em 0.5em 0 0;
   }
 
-  div {
+  .card-content {
     padding: 1em;
   }
 }
