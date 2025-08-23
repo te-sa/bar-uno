@@ -246,6 +246,30 @@ textarea {
 }
 
 /* Custom styling */
+.button-wrapper {
+  display: flex;
+  gap: 1em;
+
+  a {
+    /* button CSS reset: https://stackoverflow.com/questions/15845243/css-button-how-to-override-native-css-of-html-buttons-element */
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+
+    border: white solid 1px;
+    padding: 1em 2em;
+  }
+
+  a:hover {
+    color: #292c1f;
+    background: white;
+  }
+
+  a:active {
+    background: lightgrey;
+  }
+}
 
 img {
   max-width: 100%;
@@ -333,6 +357,9 @@ nav {
   > article {
     max-width: 700px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 
