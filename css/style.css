@@ -297,7 +297,6 @@ nav {
   div {
     display: flex;
     align-items: center;
-    padding: 1em;
     gap: 0.5em;
 
     a {
