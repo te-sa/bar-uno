@@ -172,9 +172,9 @@ textarea {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -365,7 +365,7 @@ nav {
 .content-headline {
   text-transform: uppercase;
   font-weight: lighter;
-  font-size : clamp(2rem, 5vw, 4rem);
+  font-size: clamp(2rem, 5vw, 4rem);
   margin: 0;
 }
 
@@ -466,6 +466,7 @@ nav {
     stroke-width: 0;
     stroke-dasharray: 500;
   }
+
   path {
     animation: letter-animation 2s linear forwards;
   }
@@ -497,6 +498,7 @@ nav {
 
 .custom-link {
   text-decoration: none;
+
   span {
     text-decoration: underline;
   }
