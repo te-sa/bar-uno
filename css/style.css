@@ -430,17 +430,17 @@ nav {
   }
 }
 
+.section-title {
+  text-transform: uppercase;
+  font-size: 1.25em;
+}
+
 .footer-top {
   display: flex;
   flex-wrap: wrap;
   gap: 2em;
   justify-content: space-between;
   padding: 2em;
-
-  .section-title {
-    text-transform: uppercase;
-    font-size: 1.25em;
-  }
 
   .business-hrs-section {
     display: flex;
@@ -457,11 +457,6 @@ nav {
   flex-direction: column;
   align-items: center;
   padding: 2em;
-}
-
-a {
-  text-decoration: none;
-  color: black;
 }
 
 /* logo animation */
@@ -497,5 +492,20 @@ a {
     stroke-width: 0;
     stroke-dashoffset: 0;
     fill: #fff;
+  }
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1em 5em;
+}
+
+.custom-link {
+  text-decoration: none;
+  span {
+    text-decoration: underline;
   }
 }
