@@ -140,7 +140,7 @@
   </div>
   <script src="js/app.js"></script>
 
-  <div class="content-div olive white-text">
+  <div class="content-div olive white-text" id="container">
     <article>
       <div>
         <h2 class="content-headline">Willkommen in der Bar Uno</h2>
@@ -170,29 +170,9 @@
       </picture>
       <div class="overlay">
         <p>Stimmen Sie der Google Maps <a href="https://policies.google.com/technologies/cookies?hl=de" target="_blank">Cookie Policy</a> zu?</p>
-        <button>Ja, zustimmen und Maps laden</button>
+        <button id="consent-button" onclick="loadMaps()">Ja, zustimmen und Maps laden</button>
       </div>
     </div>
-
-    <script>
-      document.getElementById("#maps-cookie-consent-overlay button").addEventListener("click", () => {
-        const oldNode = document.getElementById("maps-cookie-consent-overlay");
-
-        const iframe = document.createElement('iframe');
-        Object.assign(iframe, {
-          width: 600,
-          height: 450,
-          src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2662.1843061810373!2d11.578489399999999!3d48.1452519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e75001b41a4df%3A0x6b8e8e906d2ca7bd!2sBAR%20UNO!5e0!3m2!1sde!2sde!4v1755935997606!5m2!1sde!2sde',
-          title: 'Google Maps',
-          loading: 'lazy',
-          referrerPolicy: 'no-referrer-when-downgrade'
-        });
-        iframe.allowFullscreen = true;
-        iframe.style.border = '0';
-
-        oldNode.replaceWith(iframe);
-      })
-    </script>
   </div>
 
   <div class="content-div ochre">
