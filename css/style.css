@@ -464,6 +464,11 @@ nav {
   font-size: 1.25em;
 }
 
+.section-heading {
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
 .footer-top {
   display: flex;
   flex-wrap: wrap;
