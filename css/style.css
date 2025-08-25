@@ -390,9 +390,33 @@ nav {
       text-decoration: underline;
     }
 
-    button {
+    .spinner {
+      width: 1rem;
+      height: 1rem;
+      border: 2px solid #fff;
+      border-top: 2px solid #333;
+      border-radius: 50%;
+      animation: spin 0.6s linear infinite;
+      display: none;
+    }
+
+    #consent-button {
       padding: 1em 2em;
     }
+
+    #consent-button:disabled .spinner {
+      display: inline-block;
+    }
+
+    #consent-button:disabled .consent-span {
+      display: none;
+    }
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
   }
 }
 

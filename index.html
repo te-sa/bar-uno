@@ -226,7 +226,10 @@
     <div class="overlay">
       <p>Stimmen Sie der Google Maps <a href="https://policies.google.com/technologies/cookies?hl=de" target="_blank">Cookie
         Policy</a> zu?</p>
-      <button id="consent-button" onclick="loadMaps()">Ja, zustimmen und Maps laden</button>
+      <button id="consent-button" onclick="loadMaps()">
+        <span class="consent-span">Ja, zustimmen und Maps laden</span>
+        <span aria-disabled="true" class="spinner"></span>
+      </button>
     </div>
   </div>
 </div>

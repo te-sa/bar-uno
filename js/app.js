@@ -2,6 +2,8 @@ function loadMaps() {
   const container = document.getElementById("container");
   const iframe = document.createElement('iframe');
 
+  document.getElementById('consent-button').disabled = true;
+
   Object.assign(iframe, {
     width: "600",
     height: "450",
