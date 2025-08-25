@@ -303,6 +303,10 @@ nav {
       padding: 1em;
     }
   }
+
+  svg {
+    fill: white;
+  }
 }
 
 .header-container {
