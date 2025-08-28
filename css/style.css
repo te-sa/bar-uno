@@ -246,6 +246,15 @@ textarea {
 }
 
 /* Custom styling */
+* {
+  box-sizing: border-box;
+}
+
+a {
+  word-break: break-word; /* for legacy support */
+  overflow-wrap: anywhere;
+}
+
 .button-wrapper {
   display: flex;
   gap: 1em;
