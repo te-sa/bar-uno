@@ -502,6 +502,22 @@ nav {
   padding: 2em;
 }
 
+.banner {
+  background-color: green; 
+  position: sticky; 
+  top: 80px; 
+  z-index: 1; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  padding: 4px 16px;
+
+  p {
+    margin: 0; 
+    color: white;
+  }
+}
+
 /* logo animation */
 .logo-path {
   path {
