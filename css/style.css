@@ -503,7 +503,7 @@ nav {
 }
 
 .banner {
-  background-color: #FF8C00; 
+  background-color: green; 
   position: sticky; 
   top: 80px; 
   z-index: 1; 
